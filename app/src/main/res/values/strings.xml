@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Secupay_native</string>
+    <string name="app_title">SecuPay-支付实时交易异常检测</string>
+    <string name="hint_amount">交易金额 (¥)</string>
+    <string name="hint_location">地点(Beijing,CN)</string>
+    <string name="btn_generate">生成交易</string>
+    <string name="risk_low">低风险</string>
+    <string name="risk_medium">中风险</string>
+    <string name="risk_high">高风险</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+</resources>

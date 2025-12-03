@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_main_gradient"
+    tools:context=".Activity.shield_testActivity">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/app_title"
+        android:textAppearance="@android:style/TextAppearance.Material.Large"
+        android:textStyle="bold"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="parent"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/divider"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btnStartShield"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="开始检测"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:padding="12dp"
+        android:layout_marginTop="32dp"
+        android:backgroundTint="#4CAF50"
+        android:textColor="#FFFFFF"
+        app:layout_constraintTop_toBottomOf="@id/tvTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/tv_risk_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="风险评分:"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/risk_high_border"
+        app:layout_constraintTop_toTopOf="@+id/btnStartShield"
+        app:layout_constraintBottom_toBottomOf="@+id/btnStartShield"
+        app:layout_constraintStart_toEndOf="@+id/btnStartShield"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- 这里放环形图 -->
+    <com.example.secupay_jni.ui.RingChartView
+        android:id="@+id/left_ringChart"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_risk_score"/>
+
+    <!-- 这里放环形图 -->
+    <com.example.secupay_jni.ui.RingChartView
+        android:id="@+id/right_ringChart"
+        android:layout_width="190dp"
+        android:layout_height="180dp"
+        android:layout_margin="16dp"
+        app:layout_constraintStart_toEndOf="@+id/left_ringChart"
+        app:layout_constraintTop_toBottomOf="@id/tv_risk_score" />
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvTransactions"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/left_ringChart"
+        app:layout_constraintTop_toBottomOf="@id/left_ringChart"
+        tools:listitem="@layout/item_transaction" />
+
+    <!-- 底部导航栏 -->
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#c6ebfd"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:menu="@menu/bottom_nav_menu" />
+</androidx.constraintlayout.widget.ConstraintLayout>

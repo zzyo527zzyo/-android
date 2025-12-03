@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="10dp"
+        android:background="@drawable/bg_main_gradient">
+
+        <!-- 标题 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="便捷生活 一点就好"
+            android:fontFamily="serif"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#333333"
+            android:layout_marginTop="70dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- 欢迎语 -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你好，欢迎使用Secupay"
+            android:textSize="16sp"
+            android:textColor="#666666"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal" />
+
+        <!-- 账号输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="200dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_rounded_white"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/editTextAccount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入手机号/邮箱"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+        <!-- 密码输入框 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:background="@drawable/bg_rounded_white"
+            android:padding="15dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="密码"
+                android:textSize="16sp"
+                android:textColor="#333333"
+                android:layout_marginEnd="10dp" />
+
+            <EditText
+                android:id="@+id/editTextpassword"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="请输入密码"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="16sp"
+                android:background="@android:color/transparent" />
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/ic_down_arrow"
+                android:layout_marginStart="10dp" />
+
+        </LinearLayout>
+
+        <!-- 下一步按钮 -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="下一步"
+            android:textSize="18sp"
+            android:textColor="#FFFFFF"
+            android:background="#c6ebfd"
+            android:paddingVertical="15dp"
+            android:layout_marginHorizontal="20dp"
+            android:gravity="center" />
+
+        <!-- 注册和找回账号 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tvRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="注册账号"
+                android:textSize="16sp"
+                android:textColor="#3379FF"
+                android:layout_marginEnd="20dp" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="16dp"
+                android:background="#CCCCCC"
+                android:layout_marginHorizontal="10dp" />
+
+            <TextView
+                android:id="@+id/tvFind"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="找回账号"
+                android:textSize="16sp"
+                android:textColor="#3379FF" />
+        </LinearLayout>
+
+    </LinearLayout>

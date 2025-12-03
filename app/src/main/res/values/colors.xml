@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="risk_high_bg">#FFB0B0</color>
+    <color name="risk_high_border">#FFD32F2F</color>
+    <color name="risk_medium_bg">#FFD699</color>
+    <color name="risk_low_bg">#B2E8B2</color>
+    <color name="primary_text">#DE000000</color>
+    <color name="divider">#DDDDDD</color>
+    <color name="blue">#2196F3</color>
+</resources>

@@ -1,0 +1,13 @@
+<!-- res/values/themes.xml -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Secupay" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- 浅蓝色作为主色（用于按钮） -->
+        <item name="colorPrimary">#8cd8fa</item>
+        <!-- 状态栏和导航栏 -->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:navigationBarColor">@android:color/black</item>
+    </style>
+
+    <style name="Theme.Secupay" parent="Base.Theme.Secupay" />
+</resources>
